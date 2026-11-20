@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#194b32" />
+  <meta name="description" content="AGRO DZ — démonstration de marché agricole : produits frais, produits séchés, producteurs et commandes." />
+  <title>AGRO DZ | Marché agricole</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="demo-ribbon"><span class="demo-dot"></span><span data-i18n="demoBanner">DÉMONSTRATION INTERACTIVE — Aucune vente réelle, aucune donnée transmise</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" data-nav="home" aria-label="AGRO DZ — accueil"><span class="brand-mark">✳</span><span>AGRO<span class="brand-accent">DZ</span><small>MARKETPLACE</small></span></a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <button class="nav-link active" data-nav="home" data-i18n="navHome">Accueil</button>
+        <button class="nav-link" data-nav="catalog" data-i18n="navCatalog">Produits</button>
+        <button class="nav-link" data-nav="producers" data-i18n="navProducers">Producteurs</button>
+        <button class="nav-link" data-nav="sell" data-i18n="navSell">Espace producteur</button>
+        <button class="nav-link" data-nav="orders" data-i18n="navOrders">Commandes démo</button>
+      </nav>
+      <div class="header-actions"><button id="lang-btn" class="lang-btn" title="Changer de langue">العربية</button><button class="cart-btn" data-nav="cart" aria-label="Panier"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2 11h11l2-8H6M9 20h.01M17 20h.01"/></svg><span id="cart-count">0</span></button><button id="mobile-menu-btn" class="mobile-menu" aria-label="Menu">☰</button></div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Navigation mobile"><button data-nav="home" data-i18n="navHome">Accueil</button><button data-nav="catalog" data-i18n="navCatalog">Produits</button><button data-nav="producers" data-i18n="navProducers">Producteurs</button><button data-nav="sell" data-i18n="navSell">Espace producteur</button><button data-nav="orders" data-i18n="navOrders">Commandes démo</button></nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="footer-logo">✳ AGRO<span>DZ</span></div><p data-i18n="footerDesc">Une vitrine de démonstration pour connecter producteurs, commerçants, industriels et particuliers en Algérie.</p></div><div><h4 data-i18n="footerExplore">Explorer</h4><button data-nav="catalog" data-i18n="navCatalog">Produits</button><button data-nav="producers" data-i18n="navProducers">Producteurs</button><button data-nav="sell" data-i18n="navSell">Espace producteur</button></div><div><h4 data-i18n="footerImportant">À savoir</h4><p data-i18n="footerNotice">Prototype GitHub Pages sans serveur ni paiement. Les données de démonstration restent dans ce navigateur.</p></div></div><div class="container footer-bottom"><span>© 2026 AGRO DZ — Demo</span><span>FR / العربية · GitHub Pages</span></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="product-dialog" class="product-dialog"><button class="dialog-close" id="dialog-close" aria-label="Fermer">✕</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
